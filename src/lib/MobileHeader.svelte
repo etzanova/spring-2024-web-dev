@@ -69,7 +69,11 @@
         color: white;
     }
 
+    button {
+        background: rgb(216, 185, 241);
+        border: none;
+    }
     img {
-        max-width: 25rem
+        max-width: 5rem
     }
 </style>
