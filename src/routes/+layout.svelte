@@ -25,16 +25,6 @@
     <Footer />
   </div>
   
-  <div class="wrapper">
-    <Header />
-  
-    <main class="container">
-      <slot />
-    </main>
-  
-    <Footer />
-  </div>
-  
   <style>
     .wrapper {
       min-height: 100dvh;

@@ -14,18 +14,18 @@
             <a href="/">
                 <img src="/IMG_3243.jpg" alt="logo" />
             </a>
-            <div class="hamburger">
-                <button on:click={toggleMenu}>
-                    {#if isOpen}
-                        <Close />
-                    {:else}
-                        <Hamburger />
-                    {/if}
-                </button>
-            </div>
         </div>
-
-        {#if isOpen}
+        <div class="hamburger">
+            <button on:click={toggleMenu}>
+                {#if isOpen}
+                    <Close />
+                {:else}
+                    <Hamburger />
+                {/if}
+            </button>
+        </div>
+    </div>
+    {#if isOpen}
             <nav>
                 <ul class="flow">
                     <li><a on:click={toggleMenu} href="/">Home</a></li>
@@ -36,7 +36,6 @@
                 </ul>
             </nav>
         {/if}
-    </div>
 </header>
 
 <style>
